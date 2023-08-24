@@ -48,7 +48,7 @@
                     <div class="contentText">
                         <h2>Day 3</h2>
                         <p>
-                           Text three 
+                           Text 
                         </p>
                     </div>
                     <div class="contentImg">
@@ -59,7 +59,7 @@
                     <div class="contentText">
                         <h2>Day 4</h2>
                         <p>
-                           Text three 
+                           Text 
 
                         </p>
                     </div>
@@ -69,46 +69,32 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.05.2022')">
                     <div class="contentText">
+                        <h2>Day 5</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
                     </div>
                 </div>
                 <div class="dayContent" width="80vw" height="80vh" v-if="dayCheck('12.06.2022')">
-                    <div>
-                        <h2>Know thy Man</h2>
-                        <div class="contentText">
-                            Guten Morgen Frau Heyer, <br>
-                            <br>
-                            <iframe src="https://giphy.com/embed/lQPHNPMPZ7tcIwseGn" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                            <br> <br>
-                            Sie hatten im Gefühl, dass er kommt, Sie haben ihn gefürchtet und nun ist er hier! <br>
-                            Der TEST! Ich wünsche Ihnen viel Erfolg. <br>
-                            Hilfsmittel sind nicht erlaubt. <br>
-                            <br>
-                            Ein Bestehen hätte zur Folge, dass ich Ihr unangebrachtes und indiskretes Verhalten der letzten Tage noch einmal dulden werde. <br>
-                            Andernfalls kommen die üblichen Disziplinarverfahren zum Tragen. <br>
-                            <br>
-                            <iframe src="https://giphy.com/embed/27c3zdaY6eeIAwp7Qi" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> br
-                            <br>
-                            Weiteren Fragen? <br>
-                            Nein? <br>
-                            Good Girl. <br>
-                            <br>
-                            <iframe src="https://giphy.com/embed/26CaMZD4QVHauSB56" width="480" height="385" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> <br>
-                            
-                            
-                        </div>
-                        
-                    </div>
-                    <div>
-                        <iframe width="800" height="800" style="background-color:white; padding:5px 0px 0 5px; border:3px solid black; margin:auto; display:block" frameborder="0" src="https://crosswordlabs.com/embed/know-da-man"></iframe>
+                    <div class="contentText">
+                        <h2>Day 6</h2>
+                        <p>
+                           Text 
+
+                        </p>
                     </div>
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.07.2022')">
                     <div class="contentText">
+                        <h2>Day 7</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -116,7 +102,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.08.2022')">
                     <div class="contentText">
+                        <h2>Day 8</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -124,7 +114,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.09.2022')">
                     <div class="contentText">
+                        <h2>Day 9</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -132,7 +126,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.10.2022')">
                     <div class="contentText">
-                        
+                        <h2>Day 10</h2>
+                        <p>
+                           Text 
+
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -140,7 +138,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.11.2022')">
                     <div class="contentText">
+                        <h2>Day 11</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -148,7 +150,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.12.2022')">
                     <div class="contentText">
+                        <h2>Day 12</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -159,7 +165,7 @@
                         <h2>Day 13</h2>
                         
                         <p>
-                            Text thirteen
+                            Text
                         </p>
                     </div>
                     <div class="contentImg">
@@ -168,10 +174,9 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.14.2022')">
                     <div class="contentText">
-                        <h2>Heading 14</h2>
-                        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2>Day 14</h2>
                         <p>
-                            Text fourteen
+                            Text 
 
                         </p>
                     </div>
@@ -181,7 +186,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.15.2022')">
                     <div class="contentText">
+                        <h2>Day 15</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -189,7 +198,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.16.2022')">
                     <div class="contentText">
+                        <h2>Day 16</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -197,18 +210,35 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.17.2022')">
                     <div class="contentText">
+                        <h2>Day 17</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
                     </div>
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.18.2022')">
-                    
+                    <div class="contentText">
+                        <h2>Day 18</h2>
+                        <p>
+                           Text 
+
+                        </p>
+                    </div>
+                    <div class="contentImg">
+                        <img src="" alt="">
+                    </div>
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.19.2022')">
                     <div class="contentText">
+                        <h2>Day 19</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -216,7 +246,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.20.2022')">
                     <div class="contentText">
+                        <h2>Day 20</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -224,7 +258,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.21.2022')">
                     <div class="contentText">
+                        <h2>Day 21</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -232,7 +270,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.22.2022')">
                     <div class="contentText">
+                        <h2>Day 22</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -240,7 +282,11 @@
                 </div>
                 <div class="dayContent" v-if="dayCheck('12.23.2022')">
                     <div class="contentText">
+                        <h2>Day 23</h2>
+                        <p>
+                           Text 
 
+                        </p>
                     </div>
                     <div class="contentImg">
                         <img src="" alt="">
@@ -255,7 +301,6 @@
 
 
                         <p>
-                            Text twentyfour.
                             This is an example for some riddle, where the user needs to figure out a password to access a hidden image.
                         </p>
                         <input type="text" v-model="secretWord1">
@@ -305,14 +350,11 @@ import ClickerGame from './ClickerGame.vue';
                 showDoor: true,
                 isLoading: false,
                 presentDay: moment(),
-                solution1: "Friedhof",
-                secretWord1: "type here",
+                solution1: "solution1",
+                secretWord1: "solution1",
 
-                solution2: "Themse",
-                secretWord2: "type here",
-
-                //array for crossword
-                words:[{'word': 'Coffee','description': 'Many people drink it in the morning with milk or cream.'},{'word': 'Tea','description': "British people drink it at 5 o' clock."}]	
+                solution2: "solution2",
+                secretWord2: "solution2",
             }
         },
         props: {
