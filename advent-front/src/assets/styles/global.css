@@ -1,0 +1,46 @@
+:root {
+  --mh-light-blue: #13305a;
+  --mh-dark-blue: #091937;
+  --mh-yellow: #f0db98;
+  --mh-dark-yellow: #95844f;
+  --mh-gray: #1c1c1c;
+  --mh-red: #8c1818;
+  --mh-dark-red: #1d0503;
+  --mh-white: #fdfcfa;
+  --mh-green: #6fc888;
+  --mh-dark-green: #42744f;
+  --mh-orange: #f09355;
+
+  --addi-white: #f7f7f7;
+  --addi-slate: #2f2c27;
+  --addi-alt-slate: #2e2c28;
+  --addi-heart: #e2361c;
+  --addi-light-yellow: #f6efbc;
+  --addi-dark-yellow: #f2e48a;
+  --addi-pink: #de2c82;
+  --addi-light-pink: #eea4aa;
+  --addi-light-blue: #d5f5fa;
+  --addi-blue: #49bed6;
+  --addi-dark-blue: #1882a2;
+  
+  --christmas-green: #30360f;
+  --christmas-orange: #cb401b;
+  --christmas-brown: #934f28;
+  --christmas-beige: #cc9764;
+  --christmas-cream: #e7ddd2;
+  --christmas-purple: #46041b;
+  --christmas-copper: #a14a21;
+  --christmas-yellow: #e76e20;
+  --christmas-light-green: #748c7c;
+  --christmas-dark-green: #59564c;
+
+}
+
+button {
+  color: #1d0503;
+}
+
+body {
+  background-color: #e2c2c2;
+}
+/*# sourceMappingURL=global.css.map */
