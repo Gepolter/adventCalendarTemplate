@@ -39,16 +39,12 @@
 //https://www.chartjs.org/docs/latest/charts/line.html
 
 import { mapGetters, mapActions, mapMutations } from 'vuex'
-import LoadingScreen from './LoadingScreen.vue'
-import GuidePanel from './GuidePanel.vue'
 import CalendarGrid from './CalendarGrid.vue'
 import DoorPanel from './DoorPanel.vue'
 
 
     export default {
         components: {
-            LoadingScreen,
-            GuidePanel,
             CalendarGrid,
             DoorPanel,
         },

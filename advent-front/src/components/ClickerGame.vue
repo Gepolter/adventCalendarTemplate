@@ -6,7 +6,7 @@
                 <v-slider 
                 v-model="person._clicks"
                 :min = 1
-                :max = 500
+                :max = 50
                 :height = 10
                 :clickable = false      
                 :dragOnClick=false    
@@ -14,10 +14,10 @@
                 :dotOptions={disabled:true}
                 :marks="{
                     '0':'🌍',
-                    '100':'✈️',
-                    '350':'🛰️',
-                    '400':'☄️',
-                    '500':'🌕'
+                    '10':'✈️',
+                    '25':'🛰️',
+                    '38':'☄️',
+                    '50':'🌕'
                 }"
                 :rail-style="railStyle"
                 :process-style="processStyle"
@@ -30,7 +30,7 @@
                 </v-slider>
             </div>
             <div class="buttonsDiv">
-                <button class="love" type="submit" @click="increment(person._person_id)">Gib Luv!</button>
+                <button class="love" type="submit" @click="increment(person._person_id)">Love to the moon!</button>
             </div>
             <div class = "counterInfo">
                 {{person._name}}

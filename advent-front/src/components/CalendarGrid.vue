@@ -2,7 +2,7 @@
     <div class="stripedWrapper">
         <section class="animated-grid">
             <div class="card">
-                Anna's <br> Advent
+                User's <br> Advent
             </div>          
             <div class="card" @click="toggleDoor(day1)">
                 1

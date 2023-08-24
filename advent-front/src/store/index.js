@@ -10,12 +10,26 @@ export default createStore({
   state: {
     test:["a", "b"],
     showtime: false,
+    // Set this to moment() 
     day: moment(new Date("12.12.2022")),
-    account: Object,
+    account: {
+      _people: [
+        {
+          _name: "Gifted user's name",
+          _clicks: 0,
+          _person_id: '637a2381d9a21a0e68e29329'
+        },
+        {
+          _name: "Gifting user's Name",
+          _clicks: 0,
+          _person_id: '637a23a9d9a21a0e68e2932a'
+        }
+      ]
+    },
     //these have to be reactive to login data later
     accountId: '637a1de1d9a21a0e68e29328',
-    annaId: '637a2381d9a21a0e68e29329',
-    domId: '637a23a9d9a21a0e68e2932a',
+    User1Id: '637a2381d9a21a0e68e29329',
+    User2Id: '637a23a9d9a21a0e68e2932a',
   },
   getters: {
     getData: (state) => state.data,
@@ -47,6 +61,10 @@ export default createStore({
         }
       });*/
       console.log("store counter fired")
+      state.account._people.find((e) => e._person_id == idPerson)._clicks++
+
+      //implementation for backend
+      /*
       try{
         const increment = axios.put('http://localhost:3051/advent/clickInc/id/' + state.account._id + '/person/' + idPerson)
         console.log("get req fired")
@@ -54,6 +72,7 @@ export default createStore({
       }catch(err){
         console.log(err)
       }
+      */
     }
     /*
     SET_DOM_COUNT(state, domClick){
@@ -64,10 +83,6 @@ export default createStore({
     }*/
   },
   actions: {
-    setBuilds({ commit}, newBuilds) {
-      commit("SET_BUILDS", newBuilds)
-    },
-
     setShowtime({commit}, newShowtime){
       commit("SET_SHOWTIME", newShowtime)
     },
@@ -84,46 +99,5 @@ export default createStore({
       commit("SET_ANNA_COUNT", newCounters[1])
     },
     */
-    async fetchAccount({commit}) {
-      try {
-        const account = await axios.get('http://localhost:3051/advent/id/637a1de1d9a21a0e68e29328')///account/accountAll
-          commit('SET_ACCOUNT', account.data)
-          
-      }
-      catch (error) {
-        alert (error)
-        console.log(error)
-      }
-    },
-    
-    
-    /*
-    async fetchCounters({commit}) {
-      try {
-        const counters = await axios.get('http://localhost:3051/advent/CountersAll')
-        console.log(counters.data[0])
-        commit('SET_DOM_COUNT', counters.data[0])
-        commit('SET_ANNA_COUNT', counters.data[1])
-          
-      }
-      catch (error) {
-        alert (error)
-        console.log(error)
-      }
-    },
-    async putCounter(counterId, newAmount) {
-      try{
-        await axios.put('http://localhost:3051/counters/' + counterId, newAmount)
-      }
-      catch (error){
-        alert (error)
-        console.log(error)
-      }
-    }*/
-    
-  },
-  //not working 
-  modules: {
-    //skillsMod: skillsMod
   },
 })
