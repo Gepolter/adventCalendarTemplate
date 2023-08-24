@@ -30,7 +30,7 @@
                 </v-slider>
             </div>
             <div class="buttonsDiv">
-                <button class="love" type="submit" @click="increment(person._person_id)">Love to the moon!</button>
+                <button class="love" type="submit" @click="increment(person._person_id)">To the moon!</button>
             </div>
             <div class = "counterInfo">
                 {{person._name}}

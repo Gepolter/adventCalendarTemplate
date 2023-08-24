@@ -304,7 +304,7 @@
                             This is an example for some riddle, where the user needs to figure out a password to access a hidden image.
                         </p>
                         <input type="text" v-model="secretWord1">
-                        <div class="dayContent" v-if="secretWord1 == solution1">
+                        <div v-if="secretWord1 == solution1">
                             <div class="contentImg"  style="height: 20em; width: 20em">
                                 <!--img src="../assets/images/berg.jpeg" alt="secret image"-->
                                 Secret Image
@@ -313,7 +313,7 @@
                                 Some other step of the riddle.
                             </p>
                             <input type="text" v-model="secretWord2">
-                            <div class="contentImg" v-if="secretWord2 == solution2" style="height: 80em; width: 80em">
+                            <div class="contentImg" v-if="secretWord2 == solution2" style="height: 10em; width: 10em">
                                 <!--img src="../assets/images/riverThames.jpeg" alt="secret image"-->
                                 Secret Image 2
                             </div>
@@ -407,9 +407,9 @@ import ClickerGame from './ClickerGame.vue';
 <style>
     .doorWrapper{
         position: absolute;
-        height: 100vh;  
+        height: 80vh;  
         width: 60vw;
-        top: 0vh;
+        top: 10vh;
         left: 20vw;
         border: 3px solid black;
         justify-self:center;

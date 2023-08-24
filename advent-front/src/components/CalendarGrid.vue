@@ -97,7 +97,7 @@
 
 <style>
     .animated-grid {
-        height: 75vh;
+        height: 72vh;
         width: 75vw;
         margin-bottom: 200px;
 
