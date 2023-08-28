@@ -141,6 +141,8 @@
         background-color: rgb(3w, 243, 147);
         animation: cardEntrance 700ms ease-out;
         animation-fill-mode: backwards;
+        caret-color:transparent;
+        cursor: default;
     }
 
     .card:nth-child(1) {

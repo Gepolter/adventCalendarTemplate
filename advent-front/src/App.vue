@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link>
-
+    <a href='https://github.com/Gepolter/adventCalendarTemplate' target="_blank" rel="noopener noreferrer"><img object-fit="contain" style="width: 2em; vertical-align: middle;" :src="require('../src/assets/icons/github-mark-white.png')"/></a>
   </nav>
   <router-view/>
 </template>
@@ -18,6 +18,7 @@
 
   body {
     background-color: var(--christmas-slate);
+    cursor:none;
     //font-family: "monsterhunter", Avenir, sans-serif;
   }
 
@@ -112,6 +113,7 @@ nav {
   background-color: var(--christmas-purple);
   border-radius: 4px;
   a {
+    margin-left: 10px;
     font-weight: bold;
     color: var(--christmas-cream);
 

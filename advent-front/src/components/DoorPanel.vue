@@ -464,6 +464,7 @@ import ClickerGame from './ClickerGame.vue';
         justify-content: flex-start;
         align-items: center;
         font-family: "Helvetica";
+        caret-color:transparent;
     }
     .dayContent{
         width: 95%;
