@@ -85,10 +85,12 @@
                 setDay:'setDay'
             }),
             toggleDoor: function(day){
-                //if(!getShowtime) {
-                //}
-                this.setDay(day)
-                this.setShowtime(true)
+                if(!this.getShowtime) {
+                    this.setDay(day)
+                    this.setShowtime(true)
+                }else{
+                    this.setShowtime(false)
+                }
             },
         }
         

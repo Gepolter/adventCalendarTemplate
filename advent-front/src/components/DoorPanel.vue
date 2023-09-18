@@ -32,7 +32,7 @@
                 </div>
                 <!--control special content components like this:-->
                 <!--ClickerGame v-if="dayCheck('12.01.2022')"-->
-                <ClickerGame/>
+                
                 <div class="dayContent" v-if="dayCheck('12.02.2022')">
                     <div class="contentText">
                         <h2>🤖 Day 2 🤖</h2>
@@ -324,8 +324,10 @@
                     </div>
                 </div>
                 
-
+                
+                
             </div>
+            <ClickerGame style="align-self:flex-end"/>
         </div>
     </div>
     <!-- time test -->

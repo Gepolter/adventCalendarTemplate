@@ -1,8 +1,10 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link>
-    <router-link to="/customize">Customize</router-link> |
-    <a href='https://github.com/Gepolter/adventCalendarTemplate' target="_blank" rel="noopener noreferrer"><img object-fit="contain" style="width: 2em; vertical-align: middle;" :src="require('../src/assets/icons/github-mark-white.png')"/></a>
+    <router-link to="/customize">Customize</router-link>
+    <a href='https://github.com/Gepolter/adventCalendarTemplate' target="_blank" rel="noopener noreferrer">
+      <img object-fit="contain" style="width: 2em; vertical-align: middle;" :src="require('../src/assets/icons/github-mark-white.png')"/>
+    </a>
   </nav>
   <router-view/>
 </template>
