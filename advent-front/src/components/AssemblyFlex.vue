@@ -6,18 +6,6 @@
                     <CalendarGrid/>
                 </div>
             </div>
-            
-            <!--div class="flex-component2">
-            </div>
-            <div class="flex-component3">
-            </div>
-            <div class="flex-component4">
-                <button @click="toggleGuide()" class='guideBtn'>
-                    <p>Guide</p>
-                    <img v-bind:src="guideImg">
-                </button>
-            </div-->
-        
         </div>
         <!--GuidePanel @close="toggleGuide()" v-if="showGuide"/-->
         <LoadingScreen 
@@ -29,7 +17,6 @@
             <DoorPanel v-if="getShowtime"/>
         </Transition>
     </div>
-    
 </template>
 
 

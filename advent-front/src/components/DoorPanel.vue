@@ -11,12 +11,23 @@
             </div>
             <hr>
             <div class="doorPage">
+
                 <div class="dayContent" v-if="tooEarlyCheck(presentDay)">
                     <div class="contentImg" style="width: 50%">
                         <!--img src="../assets/images/christmasSantaCropped.jpeg" alt="image"-->
                     </div>
                     <h2>No Peeking!</h2>
                 </div>
+
+                <div class="dayContent">
+                    <div class="contentText">
+                        <h2>{{ getData['day' + funfun()].heading }}</h2>
+                    </div>
+                    <div v-for="content in getData['day' + funfun()]" :key="content">
+                        {{ content }}
+                    </div>
+                </div>
+
                 <div class="dayContent" v-if="dayCheck('12.01.2022')">
                     <div class="contentText">
                         <h2>Day 1</h2>
@@ -366,7 +377,9 @@ import ClickerGame from './ClickerGame.vue';
             ...mapGetters({
                 getShowtime: 'getShowtime',
                 getDay: 'getDay',
-            })
+                getData: 'getData',
+            }),
+            
         },
         methods: {
             ...mapActions({
@@ -383,8 +396,6 @@ import ClickerGame from './ClickerGame.vue';
                 return false
             }, 
             dayCheck(doorDate){
-                //console.log(moment(doorDate).format("DD MM YYYY"))
-                //console.log(this.getDay)
                 if(moment(doorDate).isSame(moment(this.getDay), "day") && !this.tooEarlyCheck(this.presentDay)){
                     console.log("fine day" + doorDate)
                     return true
@@ -401,6 +412,10 @@ import ClickerGame from './ClickerGame.vue';
             },
             gameFinished: function(word, lose) {
 
+            },
+            funfun(){
+                console.log("getday control")
+                return(moment(this.getDay).date())
             }
         }
     }

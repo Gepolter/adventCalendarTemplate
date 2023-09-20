@@ -2,6 +2,8 @@
 
 <template>
     <div class="customize">
+      <!--Component "Toolbox" for Customization containing drag&drop objects
+         to insert text, links and -->
       <CustomizationComp/>
     </div>
   </template>

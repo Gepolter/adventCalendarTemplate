@@ -2,15 +2,17 @@ import axios from 'axios'
 import { createStore } from 'vuex'
 import moment from 'moment'
 import {lowerCaseIncludes} from './helper'
+import userData from './dataSchema'
 
 //import skillsMod from './modules/skillsMod'
 
 export default createStore({
   
   state: {
+    data: userData,
     test:["a", "b"],
     showtime: false,
-    // Set this to moment() 
+    // Set this to moment() for a normal day-check
     day: moment(new Date("12.12.2022")),
     account: {
       _people: [
@@ -32,7 +34,7 @@ export default createStore({
     User2Id: '637a23a9d9a21a0e68e2932a',
   },
   getters: {
-    getData: (state) => state.data,
+    getData: (state) => state.data.userData.calendar_content,
     getShowtime: (state) => state.showtime,
     getDay: (state) => state.day,
     getAccount: (state) => state.account,
@@ -40,11 +42,11 @@ export default createStore({
     //getAnnaClick: (state) => state.annaClick,
   },
   mutations: {
-    SET_DATA(state, data){
-      state.data = data
-    },
     SET_SHOWTIME(state, newShowtime){
       state.showtime = newShowtime
+    },
+    SET_DATA(state, data){
+      state.data = data
     },
     SET_DAY(state, day){
       state.day = day
@@ -99,5 +101,23 @@ export default createStore({
       commit("SET_ANNA_COUNT", newCounters[1])
     },
     */
+    async fetchAccount({commit}) {
+      let loginStr = "id/" + 
+        this.state.userData.account.accountID +
+        "/pw/" + this.state.account.accountPW
+
+      try {
+        const account = await axios.get(
+          'http://localhost:3051/advent/' + loginStr
+          )
+          commit('SET_ACCOUNT', account.data)
+          
+      }
+      catch (error) {
+        alert (error)
+        console.log(error)
+      }
+    },
+
   },
 })
