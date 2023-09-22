@@ -11,7 +11,7 @@ const counterSchema = new mongoose.Schema({
 const Counter = mongoose.model('counter', counterSchema,) //db collection name "counters"... should connect without specs
 
 const accountSchema = new mongoose.Schema({
-    "account": {
+    "account_data": {
         "users": [
           {
             "name": String,

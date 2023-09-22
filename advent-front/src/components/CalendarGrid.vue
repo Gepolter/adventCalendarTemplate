@@ -94,11 +94,8 @@
             },
         }
         
-
     }
 </script>
-
-
 
 <style>
     .animated-grid {

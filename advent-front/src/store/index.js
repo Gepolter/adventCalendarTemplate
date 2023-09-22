@@ -12,7 +12,7 @@ export default createStore({
     data: userData,
     test:["a", "b"],
     showtime: false,
-    // Set this to moment() for a normal day-check
+    // Set this to moment() for a normal day-check 
     day: moment(new Date("12.12.2022")),
     account: {
       _people: [
@@ -42,11 +42,11 @@ export default createStore({
     //getAnnaClick: (state) => state.annaClick,
   },
   mutations: {
-    SET_SHOWTIME(state, newShowtime){
-      state.showtime = newShowtime
-    },
     SET_DATA(state, data){
       state.data = data
+    },
+    SET_SHOWTIME(state, newShowtime){
+      state.showtime = newShowtime
     },
     SET_DAY(state, day){
       state.day = day
@@ -95,12 +95,7 @@ export default createStore({
     setCounter({commit}, idPerson){
       commit("SET_COUNTER", idPerson)
     },
-    /*
-    setCounters({commit}, newCounters){
-      commit("SET_DOM_COUNT", newCounters[0])
-      commit("SET_ANNA_COUNT", newCounters[1])
-    },
-    */
+    
     async fetchAccount({commit}) {
       let loginStr = "id/" + 
         this.state.userData.account.accountID +
@@ -119,5 +114,12 @@ export default createStore({
       }
     },
 
+
+    /*
+    setCounters({commit}, newCounters){
+      commit("SET_DOM_COUNT", newCounters[0])
+      commit("SET_ANNA_COUNT", newCounters[1])
+    },
+    */
   },
 })

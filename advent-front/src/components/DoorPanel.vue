@@ -18,29 +18,19 @@
                     </div>
                     <h2>No Peeking!</h2>
                 </div>
-
-                <div class="dayContent">
+                <div v-else class="dayContent">
                     <div class="contentText">
-                        <h2>{{ getData['day' + funfun()].heading }}</h2>
+                        <h2>Day {{ getSelectedDayMoment()}}</h2>
+                     
+                        <div v-for="content in getData[getSelectedDayMoment()-1]" :key="content" v-html="makeContent(content)">
                     </div>
-                    <div v-for="content in getData['day' + funfun()]" :key="content">
-                        {{ content }}
                     </div>
                 </div>
 
-                <div class="dayContent" v-if="dayCheck('12.01.2022')">
-                    <div class="contentText">
-                        <h2>Day 1</h2>
-                        <p>
-                            Text
-                        </p>
-                        <iframe src="https://giphy.com/embed/WrVOtWEay7fJS" width="50%" height="50%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                        <p>
-                            Time to get creative!
-                            <br><br><br>
-                        </p>
-                    </div>
-                </div>
+
+
+
+                
                 <!--control special content components like this:-->
                 <!--ClickerGame v-if="dayCheck('12.01.2022')"-->
                 
@@ -352,6 +342,7 @@
 import moment from 'moment';
 import { mapGetters, mapActions, mapMutations } from 'vuex'
 import ClickerGame from './ClickerGame.vue';
+import App from '@/App.vue';
 
     export default {
         components: {
@@ -413,10 +404,21 @@ import ClickerGame from './ClickerGame.vue';
             gameFinished: function(word, lose) {
 
             },
-            funfun(){
+            getSelectedDayMoment(){
                 console.log("getday control")
+                console.log(this.getDay)
                 return(moment(this.getDay).date())
+            },
+            makeContent(contentObj){
+                //function to turn objects of dayData, that can be stored in DB as Strings
+                //into the correct content Format
+                console.log(contentObj)
+                let doc = document.createElement('div')
+                doc.innerHTML = contentObj
+                return contentObj
+
             }
+            
         }
     }
 </script>

@@ -44,27 +44,21 @@ router.get("/accountsAll", function(req, res){
         res.send(accountMap)
     })
 })
-router.get("/id/:_id/pw/:_pw", function(req,res){
+//login route
+router.get("login/id/:_id/pw/:_pw", function(req,res){
     let pipeline = [
         {$match: {'account_data.accountID': req.params._id}},
         {$match:  {'account_data.accountPW': req.params._pw}}
     ]
-    
     let result
     Account.find({}, async function(err, accounts){
         result = await Account.aggregate(pipeline)
-        /*
-        accounts.forEach(function(account){
-            console.log(account)
-            console.log(req.params)
-            if(account.account_data.accountID == req.params._id && account.account_data.accountPW == req.params._pw){
-                foundAccount = account
-            }
-        })*/
+       
         console.log(result)
         res.send(result)
     })
 })
+
 // test search anna URL: http://localhost:3051/advent/id/637a1de1d9a21a0e68e29328/person/637a2381d9a21a0e68e29329
 router.get("/id/:_id/person/:_person_id", function(req, res) {
     
